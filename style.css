@@ -2,18 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container{
     display: flex;
-    justify-content: center;
 }
 
 .banner.container{
     display: flex;
     position:relative;
-    width:500px;
+    width:60vw;
     height: 100vh;
+    justify-content: center;
 }
 
 .banner.container img{
@@ -47,4 +48,22 @@
 .banner.container p{
     bottom: 10px;
     text-align: center;
+}
+
+.main-content.container{    
+    display: flex;
+    height: 100vh;
+    flex-direction:column;
+}
+
+.main-content.container section{   
+    display: flex; 
+    background-color: #F9FAFB;
+    justify-content: center;
+    flex-direction: column;
+    height: 35%;
+    gap: 18px;
+    padding: 2rem;
+    font-weight: 600;
+    font-size:large;
 }
