@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@
 .banner.container{
     display: flex;
     position:relative;
-    width:50vw;
+    width:40vw;
     height: 100vh;
     justify-content: center;
 }
@@ -46,7 +50,7 @@
 }
 
 .banner.container p{
-    bottom: 10px;
+    bottom: .8rem;
     text-align: center;
 }
 
@@ -58,19 +62,19 @@
 
 .main-content.container section.description{   
     display: flex; 
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     flex: 1;
-    gap: 18px;
+    gap: 1rem;
     padding: 2rem;
     font-weight: 600;
     font-size:large;
     background-color:#F9FAFB;
 }
 
-form{
-    background-color:#F9FAFB;
-    flex: 2;
+.main-content.container section.description p{   
+    width:75%;
+    font-size: 1.5rem;
 }
 
 .form.container{
@@ -84,12 +88,15 @@ form{
 .main-content.container form {
     display: flex;
     flex-direction: column;
+    background-color:#F9FAFB;
+    flex: 2;
 }
 
 .form.subcontainer{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    width: 85%;
+    gap: 1rem 4rem;
 }
 
 /* Display block approach
@@ -103,6 +110,7 @@ form{
 .form-group{
     display: flex;
     flex-direction: column;
+    flex: 1 1 calc(50% - 2rem);
 }
 
 .form-group label{
@@ -111,7 +119,7 @@ form{
 }
 
 .form-group input{
-    padding: 5px;
+    padding: .4rem;
     border:1px lightgray solid;
 }
 
