@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
     <title>Sign-up form</title>
 </head>
 <body>
     <main>
-        <figure>
-            <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="vegetation">
-            <figcaption>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></figcaption>
-        </figure>
-        <div class="image-container">
-            <div class="layer"></div>
-                <img src="./images/odin-lined.png" alt="white-odin-logo" style="background-color: black;">
+        <div class="container">
+            <div class="banner container">
+                <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="vegetation">
+                <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+                <div class="logo">
+                    <img src="./images/odin-lined.png" alt="white-odin-logo">
+                    <h1>ODIN</h1>
+                </div>
             </div>
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started</p>
-        <p>You know you want to</p>
-        <form action="">
-            <label for="">FIRST NAME</label>
-            <input type="text">
-            <label for="">LAST NAME</label>
-            <input type="text">
-            <label for="">EMAIL</label>
-            <input type="email">
-            <label for="">PHONE NUMBER</label>
-            <input type="tel" name="" id="">
-            <label for="">PASSWORD</label>
-            <input type="password">
-            <label>CONFIRM PASSWORD</label>
-            <input type="password">
-            <button type="submit">Create Account</button>
-            <p><b>Already have an account? <a href="#">Log in</a></b></p>
-        </form>
+            <section>
+                <section>
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started</p>
+                    <p>You <em>know</em> you want to</p>
+                </section>
+                <form action="#">
+                    <h2>Let's do this!</h2>
+                    <label for="">FIRST NAME</label>
+                    <input type="text">
+                    <label for="">LAST NAME</label>
+                    <input type="text">
+                    <label for="">EMAIL</label>
+                    <input type="email">
+                    <label for="">PHONE NUMBER</label>
+                    <input type="tel" name="" id="">
+                    <label for="">PASSWORD</label>
+                    <input type="password">
+                    <label>CONFIRM PASSWORD</label>
+                    <input type="password">
+                    <button type="submit">Create Account</button>
+                    <p><b>Already have an account? <a href="#">Log in</a></b></p>
+                </form>
+            </section>
+        </div>
     </main>
 </body>
 </html>
