@@ -25,7 +25,7 @@ html {
     width: inherit;
 }
 
-.banner.container .logo, 
+.banner.container .logo,
 .banner.container p{
     position:absolute;
 }
@@ -38,7 +38,7 @@ html {
     color: white;
     width: 100%;
     top:23%;
-    background-color: rgba(51, 51, 51, 0.774);
+    background-color: rgba(41, 41, 41, 0.61);
 }
 
 .banner.container .logo img{
@@ -54,14 +54,14 @@ html {
     text-align: center;
 }
 
-.main-content.container{    
+.main-content.container{
     display: flex;
     height: 100vh;
     flex-direction:column;
 }
 
-.main-content.container section.description{   
-    display: flex; 
+.main-content.container section.description{
+    display: flex;
     justify-content: end;
     flex-direction: column;
     flex: 1;
@@ -72,7 +72,7 @@ html {
     background-color:#F9FAFB;
 }
 
-.main-content.container section.description p{   
+.main-content.container section.description p{
     width:75%;
     font-size: 1.5rem;
 }
@@ -103,22 +103,22 @@ html {
 .form-group label,
 .form-group input {
     display: block;
-    width: 100%; 
+    width: 100%;
     font-weight:600;
 } */
 
-.form-group{
+.form.subcontainer div{
     display: flex;
     flex-direction: column;
     flex: 1 1 calc(50% - 2rem);
 }
 
-.form-group label{
+.form.subcontainer div label{
     font-size: 0.8rem;
     font-weight: 600;
 }
 
-.form-group input{
+.form.subcontainer div input{
     padding: .4rem;
     border:1px lightgray solid;
 }
