@@ -3,55 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sign-up form</title>
 </head>
 <body>
     <main>
         <div>
-            <div>
+            <div class="banner">
                 <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="vegetation">
                 <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
-                <div>
+                <div class="logo">
                     <img src="./images/odin-lined.png" alt="white-odin-logo">
                     <h1>ODIN</h1>
                 </div>
             </div>
             <section>
-                <section>
+                <section class="description">
                     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started</p>
                     <p>You <em>know</em> you want to.</p>
                 </section>
                 <form action="#">
                     <div>
                         <h2>Let's do this!</h2>
-                        <div>
+                        <div class="form-input-container">
                             <div>
-                                <label for="">FIRST NAME</label>
-                                <input type="text">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name">
                             </div>
                             <div>
-                                <label for="">LAST NAME</label>
-                                <input type="text">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name">
                             </div>
                             <div>
-                                <label for="">EMAIL</label>
-                                <input type="email">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
                             </div>
                             <div>
-                                <label for="">PHONE NUMBER</label>
-                                <input type="tel" name="" id="">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone">
                             </div>
                             <div>
-                                <label for="">PASSWORD</label>
-                                <input type="password">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password">
                             </div>
                             <div>
-                                <label>CONFIRM PASSWORD</label>
-                                <input type="password">
+                                <label for="confirm-pass">Confirm Password</label>
+                                <input type="password" name="confirm-pass" id="confirm-pass">
                             </div>
                         </div>
                     </div>
