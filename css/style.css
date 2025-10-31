@@ -14,10 +14,8 @@ main > div {
 }
 
 .banner {
-    /*Why are these two lines needed? besides centering text, to remove display:block;? */
     display: flex;
     justify-content: center;
-    /*end question*/
     position: relative;
     width:45vw;
     height: 100vh;
@@ -84,6 +82,7 @@ form > div > h2{ margin-top: 0px; }
     display: flex;
     flex-flow:row wrap;
     gap: var(--regular-spacing);
+    width: 75%;
 }
 
 .form-input-container > div {
@@ -105,4 +104,13 @@ form  > div + div button{
     padding: 0.8rem;
     border-radius: 10px;
     border: none;
+}
+
+input:focus{
+    border-color: blue;
+    outline: none;
+}
+
+form input[type="password"]:invalid {
+    border-color: red;
 }
