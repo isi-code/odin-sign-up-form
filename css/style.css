@@ -3,8 +3,9 @@
     src: url('./Norse-Bold.otf');
 }
 
-:root{
+:root {
     --regular-spacing:2rem;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 main > div {
@@ -18,7 +19,7 @@ main > div {
     justify-content: center;
     /*end question*/
     position: relative;
-    width:50vw;
+    width:45vw;
     height: 100vh;
 }
 
@@ -39,7 +40,7 @@ main > div {
 .banner > div.logo {
     width: inherit;
     position: absolute;
-    top:calc(var(--regular-spacing)*5);
+    top:calc(var(--regular-spacing) * 5);
     justify-content: center;
     display: flex;
     align-items: center;
@@ -47,8 +48,8 @@ main > div {
     background-color: rgba(43, 39, 39, 0.5);
 }
 
-div.logo h1{
-    font-size: 5rem;
+div.logo h1 {
+    font-size: 4.5rem;
     margin: var(--regular-spacing) 0;
     font-family: Norse-Bold, sans-serif;
 }
@@ -56,4 +57,43 @@ div.logo h1{
 div.logo img { 
     width:max(80px,7vw);
     max-width: 250px;
+}
+
+.banner + section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    background-color:#F9FAFB;
+}
+
+.description { 
+    padding: var(--regular-spacing); 
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 70%;
+}
+
+form > div:first-child {
+    padding: var(--regular-spacing);
+    background-color: white;
+    box-shadow:5px 3px 10px black;
+}
+
+.form-input-container {
+    display: flex;
+    flex-flow:row wrap;
+    flex:1;
+}
+
+form  > div + div {
+    padding: var(--regular-spacing);
+}
+
+form  > div + div button{
+    background-color:#596D48;
+    font-weight: 700;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
 }
