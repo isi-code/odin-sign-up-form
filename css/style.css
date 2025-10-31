@@ -70,7 +70,6 @@ div.logo img {
     padding: var(--regular-spacing); 
     font-size: 1.3rem;
     font-weight: 700;
-    width: 70%;
 }
 
 form > div:first-child {
@@ -79,15 +78,25 @@ form > div:first-child {
     box-shadow:5px 3px 10px black;
 }
 
+form > div > h2{ margin-top: 0px; }
+
 .form-input-container {
     display: flex;
     flex-flow:row wrap;
-    flex:1;
+    gap: var(--regular-spacing);
 }
 
-form  > div + div {
-    padding: var(--regular-spacing);
+.form-input-container > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+form  > div + div { padding: var(--regular-spacing); }
+
+form  > div + div a{ color:#596D48; }
 
 form  > div + div button{
     background-color:#596D48;
