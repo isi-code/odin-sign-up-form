@@ -1,0 +1,59 @@
+@font-face {
+    font-family:Norse-Bold;
+    src: url('./Norse-Bold.otf');
+}
+
+:root{
+    --regular-spacing:2rem;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column wrap;
+}
+
+.banner {
+    /*Why are these two lines needed? besides centering text, to remove display:block;? */
+    display: flex;
+    justify-content: center;
+    /*end question*/
+    position: relative;
+    width:50vw;
+    height: 100vh;
+}
+
+.banner p {
+    position: absolute;
+    bottom: 1px;
+}
+
+.banner p, .banner p > a { color: white; }
+
+.banner > img {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.banner > div.logo {
+    width: inherit;
+    position: absolute;
+    top:calc(var(--regular-spacing)*5);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgba(43, 39, 39, 0.5);
+}
+
+div.logo h1{
+    font-size: 5rem;
+    margin: var(--regular-spacing) 0;
+    font-family: Norse-Bold, sans-serif;
+}
+
+div.logo img { 
+    width:max(80px,7vw);
+    max-width: 250px;
+}
